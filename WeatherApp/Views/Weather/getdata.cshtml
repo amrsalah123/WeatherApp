@@ -1,0 +1,23 @@
+﻿@model City
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> @Html.DisplayNameFor(x => x.Name)</th>
+            <th> @Html.DisplayNameFor(x => x.pressure)</th>
+            <th> @Html.DisplayNameFor(x => x.temperature)</th>
+            <th> @Html.DisplayNameFor(x => x.wind)</th>
+            <th> @Html.DisplayNameFor(x => x.Humidity)</th>
+            <th> @Html.DisplayNameFor(x => x.weather)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.pressure</td>
+            <td>@Model.temperature°</td>
+            <td>@Model.wind</td>
+            <td>@Model.Humidity</td>
+            <td>@Model.weather</td>
+        </tr>
+    </tbody>
+</table>
